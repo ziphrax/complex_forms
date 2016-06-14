@@ -1,0 +1,24 @@
+{
+  "name": "complex_forms",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ziphrax <daverival@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ziphrax/complex_forms",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "jquery": "1.9.1 - 2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0"
+  }
+}
