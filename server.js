@@ -4,7 +4,8 @@ var express = require('express')
     ,mongoose = require('mongoose')
     ,restify = require('express-restify-mongoose')
     ,app = express()
-    ,router = express.Router();
+    ,router = express.Router()
+    ,port = 3000;
 
 app.use(bodyParser.json());
 app.use(methodOverride());
@@ -18,6 +19,8 @@ restify.serve(router, mongoose.model('Customer', new mongoose.Schema({
   comment: { type: String }
 })));
 
+
+app.use(express.static('client'));
 app.use(router);
 
 app.listen(3000, () => {
